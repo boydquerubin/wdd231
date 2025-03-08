@@ -38,7 +38,7 @@ header img {
 
 header span {
   font-family: "Nova Cut", Arial, Helvetica, sans-serif;
-  color: var(--mint-cream);
+  color: #fff;
 }
 
 .coursework {
@@ -92,8 +92,8 @@ header span {
 .certificate nav ul li a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--feldgrau);
-  color: var(--mint-cream);
+  background-color: var(--olive);
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -105,7 +105,7 @@ header span {
 }
 
 footer {
-  color: var(--mint-cream);
+  color: #fff;
   background: var(--dark-slate-gray);
   padding: 1rem;
   text-align: center;
@@ -147,7 +147,7 @@ body {
   
   .navigation a {
     display: block;
-    color: var(--mint-cream);
+    color: #fff;
     padding: 1rem;
     text-decoration: none;
     text-align: center;
@@ -169,7 +169,7 @@ body {
 
   main h1 {
     grid-column: span 2;
-    color: var(--dark-slate-gray);
+    color: var(--olive);
     margin: 0;
     padding: 0.5rem 0;
   }
@@ -190,18 +190,18 @@ body {
     border: 1rem;
     border-radius: 10px 10px 0 0;
     background-color: var(--feldgrau);
-    color: var(--mint-cream);
+    color: #fff;
   }
 
   .completed-course {
     background-color: var(--lblue);
-    color: var(--olive);
+    color: #000;
     font-weight: bold;
   }
   
   .incomplete-course {
     background-color: var(--red);
-    color: var(--olive);
+    color: #000;
     font-weight: bold;
   }
   
