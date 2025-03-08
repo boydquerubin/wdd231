@@ -80,6 +80,7 @@ const courses = [
 
 function createCoursesButton(filteredCourses) {
   let container = document.querySelector(".courses-buttons");
+  let totalCreditsElement = document.querySelector("#message");
 
   container.innerHTML = "";
 
@@ -93,6 +94,9 @@ function createCoursesButton(filteredCourses) {
 
     container.appendChild(button);
   });
+
+  let totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+  totalCreditsElement.textContent = totalCredits;
 }
 
 createCoursesButton(courses);
