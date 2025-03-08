@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 <body>
   <header>
@@ -21,8 +23,9 @@
       <span>
         <h1>Boyd Querubin</h1>
       </span>
-    </div>    
-      
+    </div>
+    
+    <a id="menu" href="#"></a>
     <nav>
       <ul class="navigation">
         <li><a href="#" target="_blank" title="Home">Home</a></li>
@@ -49,6 +52,14 @@
     </section>
     <section class="certificate">
       <h2>Web and Computer Programming Certificate</h2>
+      <nav>
+        <ul class="courses-nav">
+          <li><a href="#" id="all" title="All">All</a></li>
+          <li><a href="#" id="cse" title="CSE">CSE</a></li>
+          <li><a href="#" id="wdd" title="WDD">WDD</a></li>
+        </ul>
+      </nav>
+      <div class="courses-buttons"></div>
     </section>
   </main>
   <footer>
