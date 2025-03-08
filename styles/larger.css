@@ -17,6 +17,7 @@
 
 header {
   background-color: var(--dark-slate-gray);
+  font-size: xx-large;
   align-items: center;
   flex-direction: column;
 }
