@@ -61,9 +61,7 @@ header span {
 }
 
 .location img {
-  width: 500px;
-  height: auto;
-  padding: 1.5rem;  
+  padding: 2rem;  
 }
 
 .location p {
@@ -119,12 +117,7 @@ body {
   background-color: var(--cream);
 }
 
-main h1 {
-  grid-column: span 2;
-  color: var(--dark-slate-gray);
-  margin: 0; /* Removes any default margin */
-  padding: 0.5rem 0; /* Optional: Adds a little padding */
-}
+
 
 @media screen and (min-width: 40em) {
   #menu {
@@ -163,8 +156,13 @@ main h1 {
     transform: scale(1.1);
   }
 
+  main h1 {
+    grid-column: span 2;
+    color: var(--dark-slate-gray);
+    margin: 0;
+    padding: 0.5rem 0;
+  }
   
-
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -174,7 +172,7 @@ main h1 {
     border: 1rem;
     border-radius: 10px;
   }
-
+  
   main h2 {
     padding: 1rem;
     text-align: center;
@@ -182,5 +180,5 @@ main h1 {
     border-radius: 10px 10px 0 0;
     background-color: var(--feldgrau);
     color: var(--mint-cream);
-  }  
+  }
 }
