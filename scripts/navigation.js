@@ -7,11 +7,17 @@ hambutton.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = window.location.pathname.split("/").pop();
+  let currentPage = window.location.pathname.split("/").pop();
+
+  if (currentPage === "" || currentPage === "/") {
+    currentPage = "index.html";
+  }
+
   const navLinks = document.querySelectorAll(".navigation a");
 
   navLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage || (currentPage === "index.html" && link.getAttribute("href") === "#")) {
+    if (link.getAttribute("href") === currentPage || 
+        (currentPage === "index.html" && (link.getAttribute("href") === "/" || link.getAttribute("href") === "#"))) {
       link.classList.add("active");
     }
   });
