@@ -26,7 +26,6 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  /* max-width: 760px; */
   overflow: hidden;
 }
 
@@ -56,7 +55,6 @@
 }
 
 main h1 {
-  /* grid-column: span 2; */
   color: var(--dark-slate-gray);
   margin: 0;
   padding: 0.5rem 0;
@@ -64,9 +62,7 @@ main h1 {
 
 main {
   display: block;
-  /* grid-template-columns: 2fr 1fr; */
   gap: 2rem;
-  /* grid-column: 1 / 3; */
   margin: 1rem;
   border: 1rem;
   border-radius: 10px;

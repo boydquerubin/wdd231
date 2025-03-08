@@ -11,6 +11,8 @@
   --cream: #eaf8f3;
   --lblue: #88D9E6;
   --cel: #C5FFFD;
+  --green: #39d67a;
+  --red: #f8b9b4;
 }
 
 header {
@@ -69,12 +71,36 @@ header span {
 }
 
 .certificate {
-  grid-column: 1 / -1;
-  width: 100%;
+  grid-column: span 2;
   text-align: center;
   border-radius: 10px 10px 0 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.certificate nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.certificate nav ul li {
+  list-style: none;
+}
+
+.certificate nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: var(--feldgrau);
   color: var(--mint-cream);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.certificate nav ul li a:hover {
+  background-color: var(--dark-slate-gray);
+  transform: scale(1.05);
 }
 
 footer {
@@ -89,9 +115,21 @@ footer p {
   padding: 0.5rem;
 }
 
+.completed-course {
+  background-color: var(--lblue);
+  color: var(--olive);
+  font-weight: bold;
+}
+
+.incomplete-course {
+  background-color: var(--red);
+  color: var(--olive);
+  font-weight: bold;
+}
+
 .courses-buttons {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 1rem;
   justify-content: center;
@@ -100,24 +138,21 @@ footer p {
 .course-button {
   padding: 10px 15px;
   border: none;
-  background-color: #526760;
-  color: white;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  transition: background 0.3s;
+  text-align: center;
 }
 
+
 .course-button:hover {
-  background-color: #374B4A;
+  transform: scale(1.01);
 }
 
 body {  
   font-family: "Sunflower", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
 }
-
-
 
 @media screen and (min-width: 40em) {
   #menu {
@@ -140,6 +175,7 @@ body {
   
   .navigation li {
     flex: 1 1 auto;
+    display: block;
   }
   
   .navigation a {
@@ -154,6 +190,14 @@ body {
     font-weight: 700;
     color: var(--lblue);
     transform: scale(1.1);
+  }
+
+  .open a {
+    display: block;
+  }
+
+  .active::before {
+    content: "📍";
   }
 
   main h1 {

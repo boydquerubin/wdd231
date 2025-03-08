@@ -87,7 +87,10 @@ function createCoursesButton(filteredCourses) {
     let button = document.createElement("button");
 
     button.textContent = `${course.subject} ${course.number} - ${course.title}`;
+
+    button.classList.add(course.completed ? "completed-course" : "incomplete-course");
     button.classList.add("course-button");
+
     container.appendChild(button);
   });
 }
