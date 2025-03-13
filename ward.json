@@ -1,0 +1,35 @@
+[
+  {
+    "family-name": "Warren",
+    "move-in-date": "2013-11-12",
+    "family-capacity": 5,
+    "visited-by-bishopric": true,
+    "individual-family-members": [
+      {
+        "name": "Joe",
+        "gender": "male",
+        "birthdate": "1969-07-23"
+      },
+      {
+        "name": "Jane",
+        "gender": "female",
+        "birthdate": "1968-02-17"
+      },
+      {
+        "name": "Jack",
+        "gender": "male",
+        "birthdate": "1988-06-15"
+      },
+      {
+        "name": "Jill",
+        "gender": "female",
+        "birthdate": "1991-06-07"
+      },
+      {
+        "name": "Joanne",
+        "gender": "female",
+        "birthdate": "1998-08-06"
+      }
+    ]
+  }
+]
