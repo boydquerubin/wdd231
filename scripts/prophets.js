@@ -39,3 +39,36 @@ const displayProphets = (prophets) => {
     cards.appendChild(card);
   })
 }
+
+const allLink = document.querySelector("#all");
+const utahLink = document.querySelector("#utah");
+const outsideUSLink = document.querySelector("#outside-us");
+const overNinetyFiveLink = document.querySelector("#over-ninety-five");
+const overTenChildrenLink = document.querySelector("#over-ten-children");
+const servedOverFifteenYearsLink = document.querySelector("#served-over-fifteen-years");
+
+// allLink.addEventListener("click", () => {
+//   document.querySelector("#cards").innerHTML = "";
+//   displayProphets(cards);
+// })
+
+allLink.addEventListener("click", async () => {
+  document.querySelector("#cards").innerHTML = "";
+  const response = await fetch(url);
+  const data = await response.json();
+  displayProphets(data.prophets);
+});
+
+// utahLink.addEventListener("click", () => {
+//   document.querySelector(".cards").innerHTML = "";
+//   document.querySelector("#heading").innerHTML = "Prophets from Utah";
+//   displayProphets(cards.filter(prophet => prophet.birthplace = ("Utah")))
+// })
+
+utahLink.addEventListener("click", async () => {
+  document.querySelector("#cards").innerHTML = "";
+  document.querySelector("#heading").textContent = "Prophets from Utah";
+  const response = await fetch(url);
+  const data = await response.json();
+  displayProphets(data.prophets.filter(prophet => prophet.birthplace.includes("Utah")));
+});

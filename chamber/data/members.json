@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Tech Innovators Inc.",
+    "address": "123 Silicon Valley, CA, USA",
+    "phone": "+1-800-555-1234",
+    "website": "https://www.techinnovators.com",
+    "imageurl": "tech_innovators.png",
+    "membership_level": 3,
+    "industry": "Technology",
+    "description": "A leading tech company specializing in AI and cloud computing."
+  },
+  {
+    "name": "Green Energy Solutions",
+    "address": "456 Eco Street, Denver, CO, USA",
+    "phone": "+1-800-555-5678",
+    "website": "https://www.greenenergy.com",
+    "imageurl": "green_energy.png",
+    "membership_level": 2,
+    "industry": "Renewable Energy",
+    "description": "Providing sustainable energy solutions for businesses and homes."
+  },
+  {
+    "name": "Elite Financial Services",
+    "address": "789 Wall Street, New York, NY, USA",
+    "phone": "+1-800-555-9012",
+    "website": "https://www.elitefinance.com",
+    "imageurl": "elite_finance.png",
+    "membership_level": 3,
+    "industry": "Finance",
+    "description": "Offers high-quality investment and wealth management services."
+  },
+  {
+    "name": "Healthy Living Foods",
+    "address": "101 Organic Way, Austin, TX, USA",
+    "phone": "+1-800-555-3456",
+    "website": "https://www.healthylivingfoods.com",
+    "imageurl": "healthy_living.png",
+    "membership_level": 1,
+    "industry": "Food & Beverage",
+    "description": "Organic and health-conscious food products for a better lifestyle."
+  },
+  {
+    "name": "Swift Logistics",
+    "address": "202 Transport Lane, Chicago, IL, USA",
+    "phone": "+1-800-555-7890",
+    "website": "https://www.swiftlogistics.com",
+    "imageurl": "swift_logistics.png",
+    "membership_level": 2,
+    "industry": "Logistics",
+    "description": "Fast and reliable shipping and supply chain solutions."
+  },
+  {
+    "name": "Creative Design Studio",
+    "address": "303 Art District, Los Angeles, CA, USA",
+    "phone": "+1-800-555-6543",
+    "website": "https://www.creativedesign.com",
+    "imageurl": "creative_design.png",
+    "membership_level": 1,
+    "industry": "Design & Marketing",
+    "description": "Innovative branding, graphic design, and digital marketing services."
+  },
+  {
+    "name": "Summit Outdoor Gear",
+    "address": "404 Adventure Ave, Seattle, WA, USA",
+    "phone": "+1-800-555-3210",
+    "website": "https://www.summitgear.com",
+    "imageurl": "summit_outdoor.png",
+    "membership_level": 3,
+    "industry": "Retail & Outdoor",
+    "description": "High-quality outdoor and adventure equipment for enthusiasts."
+  }
+]
