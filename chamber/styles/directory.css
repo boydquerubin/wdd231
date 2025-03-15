@@ -152,8 +152,9 @@ main h2 {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color: var(--lblue);
 	text-align: center;
+  border-radius: 10px;
 }
 
 .menu button {
