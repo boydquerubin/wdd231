@@ -130,8 +130,6 @@ footer {
   text-decoration: none;
 } */
 
-
-
 main h1 {
   color: var(--olive);
   padding: 0.5rem 0;
@@ -144,6 +142,103 @@ main h2 {
   color: #fff;
   border-radius: 10px 10px 0 0;
 }
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+/* 📌 Grid View (Ensure Cards are Centered) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust columns dynamically */
+  gap: 20px;
+  justify-content: center; /* Centers grid content */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Prevents excessive stretching */
+  margin: 0 auto; /* Centers the entire grid */
+}
+
+.grid .member-card {
+  background-color: var(--mint-cream);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  /* padding: 1rem; */
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* Ensures cards fill the column */
+  max-width: 350px; /* Restricts card width */
+  margin: auto; /* Ensures individual cards are centered */
+}
+
+.grid .member-card:hover {
+  transform: scale(1.01);
+}
+
+.grid .member-card img {
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 📌 List View (Excel-Style Table) */
+.list {
+  display: block;
+  width: 100%;
+}
+
+.list #members {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list .member-card {
+  display: table-row;
+  border: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.list .member-card h2,
+.list .member-card p,
+.list .member-card a {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: var(--dark-slate-gray);
+  font-size: 1rem;
+}
+
+.list .member-card img {
+  display: none; /* Hide images in list view */
+}
+
+.list .member-card h2 {
+  font-weight: bold;
+}
+
+.list .member-card a {
+  text-decoration: underline;
+  color: var(--olive);
+}
+
+.list .member-card:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05); /* Alternating row colors */
+}
+
 
 
 @media screen and (max-width: 900px) {
@@ -168,7 +263,7 @@ main h2 {
   
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   #menu {
     display: block;
     position: absolute;
@@ -259,6 +354,7 @@ main h2 {
 
   .member-card {
     min-height: auto;
+    margin: auto;
   }
 
   .member-card img {
