@@ -22,8 +22,8 @@ const displayMembers = (companies) => {
     let membershipLevel = document.createElement("p");
 
     name.textContent = company.name;
-    address.textContent = `Address: ${company.address}`;
-    phone.textContent = `Phone: ${company.phone}`;
+    address.textContent = `${company.address}`;
+    phone.textContent = `${company.phone}`;
     website.href = company.website;
     website.textContent = company.website;;
     website.target = "_blank";
