@@ -7,6 +7,7 @@
   --dark-slate-gray: #374B4A;
   --feldgrau: #526760;
   --olive: #32403B;
+  --dark-green: #0a0e0c;
   --mint-cream: #DBE9E4;
   --cream: #eaf8f3;
   --lblue: #88D9E6;
@@ -15,7 +16,7 @@
   --red: #f8b9b4;
 }
 
-body {
+html, body {
   font-family: "Sunflower", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
 }
@@ -46,7 +47,7 @@ header img {
   font-family: "Nova Cut", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--mint-cream);
   line-height: 1.4;
   text-align: left;
 }
@@ -68,7 +69,7 @@ nav {
 }
 
 .navigation a {
-  color: #fff;
+  color: var(--mint-cream);
   text-decoration: none;
   font-weight: bold;
   padding: 10px 15px;
@@ -81,7 +82,7 @@ nav {
 
 
 footer {
-  color: #fff;
+  color: var(--mint-cream);
   background: var(--dark-slate-gray);
   padding: 1rem;
   text-align: center;
@@ -92,6 +93,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 2rem;
+  min-height: 65vh;
 }
 
 .member-card {
@@ -105,12 +107,8 @@ footer {
   transition: transform 0.3s ease-in-out;
 }
 
-.member-card:hover {
-  transform: scale(1.01);
-}
-
 .member-card h2 {
-  color: #fff;
+  color: var(--mint-cream);
   margin-bottom: 0.5rem;
 }
 
@@ -138,9 +136,9 @@ main h1 {
 main h2 {
   padding: 1rem;
   text-align: center;
-  background-color: var(--feldgrau);
-  color: #fff;
-  border-radius: 10px 10px 0 0;
+  color: var(--mint-cream);
+  /* background-color: var(--feldgrau);
+  border-radius: 10px 10px 0 0; */
 }
 
 .menu {
@@ -154,6 +152,11 @@ main h2 {
 .menu button {
 	padding: 1rem;
 	font-weight: 700;
+}
+
+.menu button:hover {
+  transform: scale(1.05);  
+  cursor: pointer;
 }
 
 .grid {
@@ -172,15 +175,10 @@ main h2 {
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
-  /* padding: 1rem; */
   transition: transform 0.3s ease-in-out;
   width: 100%;
   max-width: 350px;
   margin: auto;
-}
-
-.grid .member-card:hover {
-  transform: scale(1.01);
 }
 
 .grid .member-card img {
@@ -189,6 +187,15 @@ main h2 {
   margin: 1rem 0;
   border-radius: 5px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid .member-card h2 {
+  background-color: var(--feldgrau);
+  border-radius: 10px 10px 0 0;
+}
+
+.grid .member-card p {
+  color: var(--dark-green);
 }
 
 .list {
@@ -217,7 +224,7 @@ main h2 {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: left;
-  color: var(--dark-slate-gray);
+  color: var(--dark-green);
   font-size: 1rem;
 }
 
@@ -313,7 +320,7 @@ main h2 {
   .navigation a:active {
     color: var(--lblue);
     font-weight: 800;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   /* .active::before {
