@@ -1,52 +1,42 @@
 const membersContainer = document.querySelector("#members");
-
 const url = "data/members.json";
 
-async function fetchMembers() {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const companies = await response.json();
-    displayMembers(companies);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
+async function getMembers() {
+  const response = await fetch(url);
+  const data = await response.json();
+  displayMembers(data);
 }
 
-function displayMembers(companies) {
-  membersContainer.innerHTML = "";
-  
+getMembers();
+
+const displayMembers = (companies) => {
   companies.forEach(company => {
-    let card = document.createElement("div");
-    card.classList.add("member-card");
-
+    let card = document.createElement("section");
+    card.classList.add("member-card"); // Add class for styling
+    
     let name = document.createElement("h2");
-    name.textContent = company.name;
-
+    let image = document.createElement("img");
     let address = document.createElement("p");
-    address.textContent = `Address: ${company.address}`;
-
     let phone = document.createElement("p");
-    phone.textContent = `Phone: ${company.phone}`;
-
     let website = document.createElement("a");
+    let membershipLevel = document.createElement("p");
+
+    name.textContent = company.name;
+    address.textContent = `Address: ${company.address}`;
+    phone.textContent = `Phone: ${company.phone}`;
     website.href = company.website;
     website.textContent = "Visit Website";
     website.target = "_blank";
+    membershipLevel.textContent = `Membership: ${company.membership_level === 3 ? "Gold" : company.membership_level === 2 ? "Silver" : "Member"}`;
 
-    let membershipLevel = document.createElement("p");
-    let levelText = company.membership_level === 3 ? "Gold" :
-                    company.membership_level === 2 ? "Silver" :
-                    "Member";
-    membershipLevel.textContent = `Membership: ${levelText}`;
+    // Apply image attributes
+    image.setAttribute("src", company.imageurl);
+    image.setAttribute("alt", `Logo of ${company.name}`);
+    image.setAttribute("loading", "lazy");
+    image.setAttribute("width", "auto");
+    image.setAttribute("height", "100");
 
-    let image = document.createElement("img");
-    image.src = company.imageurl;
-    image.alt = `Logo of ${company.name}`;
-    image.loading = "lazy";
-
+    // Append elements to card
     card.appendChild(name);
     card.appendChild(image);
     card.appendChild(address);
@@ -54,8 +44,7 @@ function displayMembers(companies) {
     card.appendChild(membershipLevel);
     card.appendChild(website);
 
+    // Append card to container
     membersContainer.appendChild(card);
   });
-}
-
-fetchMembers();
+};
