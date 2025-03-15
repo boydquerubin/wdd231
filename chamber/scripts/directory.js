@@ -43,7 +43,7 @@ function displayMembers(companies) {
     membershipLevel.textContent = `Membership: ${levelText}`;
 
     let image = document.createElement("img");
-    image.src = company.image;
+    image.src = company.imageurl;
     image.alt = `Logo of ${company.name}`;
     image.loading = "lazy";
 
