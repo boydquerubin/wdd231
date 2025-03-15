@@ -25,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 }
 
 .header-content {
@@ -38,7 +38,8 @@ header img {
   width: 50px;
   height: auto;
   border-radius: 5px;  
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+  padding: 1rem;
 }
 
 .chamber-title {
@@ -96,7 +97,7 @@ footer {
 .member-card {
   width: 400px;
   max-width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   background-color: var(--mint-cream);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -125,21 +126,25 @@ footer {
   margin: 0.5rem 0;
 }
 
-.member-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 10px 15px;
-  background-color: var(--feldgrau);
-  color: #fff;
+/* .member-card a {
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+} */
+
+
+
+main h1 {
+  color: var(--olive);
+  padding: 0.5rem 0;
 }
 
-.member-card a:hover {
-  background-color: var(--dark-slate-gray);
+main h2 {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--feldgrau);
+  color: #fff;
+  border-radius: 10px 10px 0 0;
 }
+
 
 @media screen and (max-width: 900px) {
   #members {
@@ -160,16 +165,114 @@ footer {
     border-radius: 10px;
 }
   
-  main h1 {
-    color: var(--olive);
-    padding: 0.5rem 0;
+  
+}
+
+@media screen and (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--mint-cream);
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #menu::before {
+    content: "≡";
+  }
+
+  #menu.show::before {
+    content: "X";
   }
   
-  main h2 {
-    padding: 1rem;
+  .chamber-title {
+    padding-bottom: 1rem;
+  }
+  .navigation {
+    display: none;
+    list-style: none;
+    background-color: var(--olive);
     text-align: center;
-    background-color: var(--feldgrau);
-    color: #fff;
-    border-radius: 10px 10px 0 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .navigation.show {
+    display: block;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    color: var(--mint-cream);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .navigation a:hover,
+  .navigation a:active {
+    color: var(--lblue);
+    font-weight: 800;
+    transform: scale(1.1);
+  }
+
+  /* .active::before {
+    content: "📍";
+  } */
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  header img {
+    width: 40px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #members {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .member-card {
+    min-height: auto;
+  }
+
+  .member-card img {
+    width: 150px;
+    height: auto;
+  }
+
+  .chamber-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .member-card p {
+    font-size: 0.9rem;
   }
 }
+
