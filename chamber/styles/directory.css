@@ -91,7 +91,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 2rem;
-  min-height: 70vh;
+  min-height: 30vh;
 }
 
 .member-card {
@@ -120,7 +120,7 @@ footer {
 
 .member-card p {
   font-size: 1rem;
-  color: var(--dark-slate-gray);
+  color: var(--dark-green);
   margin: 0.5rem 0;
 }
 

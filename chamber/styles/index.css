@@ -41,7 +41,7 @@
 } */
 
 .weather-card {
-  border: 1px solid #5d6f67;
+  border: 1px solid var(--dark-green);
   background-color: var(--lblue);
   border-radius: 10px;
   text-align: center;
@@ -53,7 +53,7 @@
 }
 
 .weather-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .weather-card h2 {
@@ -82,7 +82,7 @@
 
 main {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 main h1 {
@@ -93,6 +93,7 @@ main h1 {
 main h2 {
   padding: 1rem;
   text-align: center;
+  color: var(--dark-green);
 }
 
 /* main img {
@@ -108,28 +109,38 @@ main h2 {
 }
 
 .cta-join-button button {
-  background-color: var(--olive);
-  color: white;
+  background-color: var(--lblue);
+  color: var(--dark-green);
   padding: 12px 20px;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 5px;
   transition: background 0.3s;
+  border: 1px solid var(--dark-green);
+  
 }
 
 .cta-join-button button:hover {
-  background-color: var(--feldgrau);
+  background-color: var(--cel);
+  transform: scale(1.01);
 }
 
 .current-events {
-  background: var(--lblue);
-  padding: 15px;
   margin: 20px 0;
-  border-radius: 10px;
 }
 
 .current-events h2 {
-  color: var(--dark-green);
-  font-size: 1.5rem;
+  color: var(--cream);
+  background: var(--olive);
+  font-size: 1.5rem;  
+  /* border-radius: 10px; */
+}
+
+.company-spotlight {
+  /* color: var(--dark-green);
+  background: var(--mint-cream); */  
+  color: var(--cream);
+  background: var(--olive);
+  font-size: 1.5rem;  
 }

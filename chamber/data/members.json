@@ -5,7 +5,7 @@
     "phone": "(208) 579-2369",
     "website": "https://biggby.com/",
     "imageurl": "https://www.biggby.com/wp-content/uploads/2021/01/BIGGBYCoffeeLogo_Horizontal_RGB-300x115.jpg",
-    "membership_level": 2,
+    "membership_level": 1,
     "industry": "Food & Beverage",
     "description": "A popular coffee shop."
   },
@@ -31,7 +31,7 @@
   },
   {
     "name": "The Flower Place",
-    "address": "930 N Main St, Meridian, ID 83642D",
+    "address": "930 N Main St, Meridian, ID 83642",
     "phone": "(208) 888-5552",
     "website": "https://www.flowerplace.org/",
     "imageurl": "https://assets.eflorist.com/site/EF-7213/Logo/m8800001-11-0924AA.gif",
