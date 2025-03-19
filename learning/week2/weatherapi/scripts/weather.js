@@ -14,14 +14,24 @@ async function apiFetch() {
     const response = await fetch(myURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
-      // displayResults(data); // uncomment when ready
+      // console.log(data); // testing only
+      displayResults(data); // uncomment when ready
     } else {
         throw Error(await response.text());
     }
   } catch (error) {
       console.log(error);
   }
+}
+
+function displayResults(data) {
+  // console.log('hello')
+  myTown.innerHTML = data.name
+  myDescription.innerHTML = data.weather[0].description
+  myTemperature.innerHTML = `${data.main.temp}&degF`
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+  myGraphic.setAttribute('SRC', iconsrc)
+  myGraphic.setAttribute('alt', data.weather[0].description)
 }
 
 apiFetch();
