@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,118 @@
   --red: #f8b9b4;
 }
 
+html, body {
+  font-family: "Sunflower", Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+}
+
+/* Header Styles */
+header {
+  background-color: var(--dark-slate-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;  
+  padding: 1rem;
+}
+
+.chamber-title {
+  font-family: "Nova Cut", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--mint-cream);
+  line-height: 1.4;
+  text-align: left;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  color: var(--mint-cream);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: var(--lblue);
+}
+
+/* Footer Styles */
+footer {
+  color: var(--mint-cream);
+  background: var(--dark-slate-gray);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Member Cards */
+#members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 2rem;
+  min-height: 30vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.member-card {
+  width: 400px;
+  max-width: 100%;
+  min-height: 300px;
+  background-color: var(--mint-cream);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.member-card h2 {
+  color: var(--mint-cream);
+  background-color: var(--dark-slate-gray);
+  border-radius: 10px 10px 0 0;
+}
+
+.member-card img {
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member-card p {
+  font-size: 1rem;
+  color: var(--dark-green);
+}
+
+/* Weather Card */
 .weather-card {
   border: 1px solid var(--dark-green);
   background-color: var(--lblue);
@@ -32,11 +145,6 @@
 
 .weather-card:hover {
   transform: scale(1.01);
-}
-
-.weather-card #town {
-  margin: 0;
-  padding: 0;
 }
 
 .weather-card h2 {
@@ -57,39 +165,7 @@
   color: var(--dark-green);
 }
 
-.weather-card img {
-  max-width: 100%;
-  height: auto;
-}
-
-main {
-  text-align: center;
-}
-
-main h1 {
-  color: var(--olive);
-  padding: 0.5rem 0;
-  text-align: left;
-}
-
-main h2 {
-  padding: 1rem;
-  text-align: center;
-  color: var(--dark-green);
-}
-
-#hero-img {
-  max-width: 100%;
-  height: auto;
-  /* border-radius: 10px; */
-  display: block;
-  margin: 0 auto;
-}
-
-.cta-join-button {
-  margin: 20px 0;
-}
-
+/* CTA Button */
 .cta-join-button button {
   background-color: var(--lblue);
   color: var(--dark-green);
@@ -107,29 +183,40 @@ main h2 {
   transform: scale(1.01);
 }
 
-.current-events {
-  margin: 20px 0;
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  #members {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.current-events h2,
-.company-spotlight {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 1rem;
-  margin: 0 auto;
-  color: var(--dark-green);
-  font-family: "Nova Cut", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  text-align: center; 
-}
+@media screen and (max-width: 37.5em) {
+  .navigation {
+    display: none;
+    background-color: var(--olive);
+    text-align: center;
+    width: 100%;
+  }
 
-#members {
-  display: grid;
-  gap: 20px;
-  padding: 2rem;
-  min-height: 30vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
+  .navigation.show {
+    display: block;
+  }
+
+  .navigation a:hover,
+  .navigation a:active {
+    color: var(--lblue);
+    font-weight: 800;
+    transform: scale(1.05);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .member-card {
+    min-height: auto;
+    margin: auto;
+  }
 }

@@ -78,6 +78,7 @@ nav {
   color: var(--lblue);
 }
 
+
 footer {
   color: var(--mint-cream);
   background: var(--dark-slate-gray);
@@ -90,7 +91,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 2rem;
-  min-height: 30vh;
+  min-height: 70vh;
 }
 
 .member-card {
@@ -107,8 +108,6 @@ footer {
 .member-card h2 {
   color: var(--mint-cream);
   margin-bottom: 0.5rem;
-  background-color: var(--dark-slate-gray);
-  border-radius: 10px 10px 0 0;
 }
 
 .member-card img {
@@ -119,7 +118,7 @@ footer {
 
 .member-card p {
   font-size: 1rem;
-  color: var(--dark-green);
+  color: var(--dark-slate-gray);
   margin: 0.5rem 0;
 }
 
@@ -155,7 +154,7 @@ main h2 {
 	padding: 0.5rem;
 	background-color: var(--feldgrau);
 	text-align: center;
-  /* border-radius: 10px; */
+  border-radius: 10px;
 }
 
 .menu button {
@@ -381,4 +380,3 @@ main h2 {
     font-size: 0.9rem;
   }
 }
-
