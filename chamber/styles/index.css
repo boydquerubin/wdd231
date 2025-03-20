@@ -22,6 +22,7 @@
   border-radius: 10px;
   text-align: center;
   padding: 2rem 1.5rem;
+  width: 200px;
   max-width: 300px;
   margin: 20px auto;
   overflow: hidden;
@@ -98,8 +99,7 @@ main h2 {
   font-size: 1rem;
   border-radius: 5px;
   transition: background 0.3s;
-  border: 1px solid var(--dark-green);
-  
+  border: 1px solid var(--dark-green);  
 }
 
 .cta-join-button button:hover {
@@ -111,14 +111,25 @@ main h2 {
   margin: 20px 0;
 }
 
-.current-events h2 {
-  color: var(--cream);
-  background: var(--feldgrau);
+.current-events h2,
+.company-spotlight {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0 auto;
+  color: var(--dark-green);
+  font-family: "Nova Cut", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+  text-align: center; 
 }
 
-.company-spotlight {
-  color: var(--cream);
-  background: var(--feldgrau);
-  font-size: 1.5rem;  
+#members {
+  display: grid;
+  gap: 20px;
+  padding: 2rem;
+  min-height: 30vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
 }
