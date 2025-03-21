@@ -5,9 +5,15 @@ async function getMembers() {
   const response = await fetch(url);
   const data = await response.json();
 
-  const level1Members = data.filter(company => company.membership_level === 1);
+  const level1 = data.filter(company => company.membership_level === 1);
+  const level2 = data.filter(company => company.membership_level === 2);
 
-  displayMembers(level1Members);
+  const combined = [...level1, ...level2];
+  const shuffled = combined.sort(() => Math.random() - 0.5);
+
+  const selectedMembers = shuffled.slice(0, 3);
+
+  displayMembers(selectedMembers);
 }
 
 getMembers();
@@ -16,15 +22,15 @@ const displayMembers = (companies) => {
   membersContainer.innerHTML = "";
 
   companies.forEach(company => {
-    let card = document.createElement("section");
+    const card = document.createElement("section");
     card.classList.add("member-card");
 
-    let name = document.createElement("h2");
-    let image = document.createElement("img");
-    let address = document.createElement("p");
-    let phone = document.createElement("p");
-    let website = document.createElement("a");
-    let membershipLevel = document.createElement("p");
+    const name = document.createElement("h2");
+    const image = document.createElement("img");
+    const address = document.createElement("p");
+    const phone = document.createElement("p");
+    const website = document.createElement("a");
+    const membershipLevel = document.createElement("p");
 
     name.textContent = company.name;
     address.textContent = company.address;
@@ -32,7 +38,9 @@ const displayMembers = (companies) => {
     website.href = company.website;
     website.textContent = company.website;
     website.target = "_blank";
-    membershipLevel.textContent = "Membership: Member";
+
+    const levelLabel = company.membership_level === 1 ? "Gold Member" : "Silver Member";
+    membershipLevel.textContent = `Membership: ${levelLabel}`;
 
     image.setAttribute("src", company.imageurl);
     image.setAttribute("alt", `Logo of ${company.name}`);

@@ -115,6 +115,7 @@ footer {
   color: var(--mint-cream);
   background-color: var(--dark-slate-gray);
   border-radius: 10px 10px 0 0;
+  padding: 1rem;
 }
 
 .member-card img {
@@ -128,42 +129,6 @@ footer {
   color: var(--dark-green);
 }
 
-/* Weather Card */
-.weather-card {
-  border: 1px solid var(--dark-green);
-  background-color: var(--lblue);
-  border-radius: 10px;
-  text-align: center;
-  padding: 2rem 1.5rem;
-  width: 200px;
-  max-width: 300px;
-  margin: 20px auto;
-  overflow: hidden;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.weather-card:hover {
-  transform: scale(1.01);
-}
-
-.weather-card h2 {
-  color: var(--dark-green);
-  font-size: 1.4rem;
-}
-
-.weather-card #description {
-  text-transform: capitalize;
-  color: var(--dark-green);
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.weather-card #temperature {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: var(--dark-green);
-}
 
 /* CTA Button */
 .cta-join-button button {
@@ -219,4 +184,68 @@ footer {
     min-height: auto;
     margin: auto;
   }
+}
+
+.general-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+}
+
+#current-events-header, #weather-forecast-header, #current-weather-header {
+  background-color: var(--dark-slate-gray);
+  color: var(--cream);
+  border-radius: 10px 10px 0px 0px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.current-events {
+  background-color: var(--mint-cream);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* weather forecast */
+.weather-forecast {
+  background-color: var(--mint-cream);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Weather Card */
+.weather-card {
+  /* border: 1px solid var(--dark-green); */
+  background-color: var(--mint-cream);
+  border-radius: 10px;
+  /* text-align: center; */
+  /* padding: 2rem 1.5rem;
+  width: 200px;
+  max-width: 300px;
+  margin: 20px auto;
+  overflow: hidden; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-card:hover {
+  transform: scale(1.01);
+}
+
+.weather-card h2 {
+  color: var(--dark-green);
+  /* font-size: 1.4rem; */
+}
+
+.weather-card #description {
+  text-transform: capitalize;
+  color: var(--dark-green);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.weather-card #temperature {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--dark-green);
 }
