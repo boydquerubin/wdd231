@@ -69,15 +69,24 @@ nav {
 .navigation a {
   color: var(--mint-cream);
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 10px 15px;
   transition: color 0.3s ease;
 }
 
-.navigation a:hover {
+.navigation a.active {
   color: var(--lblue);
+  font-weight: bold;
 }
 
+.navigation a.active::before {
+  content: "🌐 ";
+}
+
+.navigation a:hover {
+  color: var(--lblue);
+  font-weight: bold;
+}
 
 footer {
   color: var(--mint-cream);
@@ -332,9 +341,9 @@ main h2 {
     transform: scale(1.05);
   }
 
-  .active::before {
+  /* .active::before {
     content: "📍";
-  }
+  } */
 
   header {
     flex-direction: column;
