@@ -20,6 +20,7 @@
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/showcase.js" defer></script>
   <script src="scripts/weather.js" defer></script>
+  <script src="scripts/forecast.js" defer></script>
 </head>
 <body>
   <header>
@@ -42,12 +43,12 @@
   </header>
 
   <main>
-    <h1>Welcome to the Meridian Chamber of Commerce</h1>
+    <h1>Home</h1>
     <img id="hero-img" src="images/meridian.webp" alt="Meridian, Idaho Neighborhood">
     <div class="cta-join-button">
       <button>Join Chamber of Commerce</button>
     </div>
-    <div class="general-info">
+    <div id="general-info">
       <section class="current-events">
         <h2 id="current-events-header">Current Events</h2>
         <p>Salsa Dancing</p>
@@ -62,8 +63,8 @@
       <div class="weather-forecast">
         <h2 id="weather-forecast-header">Weather Forecast</h2>
         <p id="today">--°F</p>
-        <p id="wednesday">--°F</p>
-        <p id="thursday">--°F</p>
+        <p id="tomorrow">--°F</p>
+        <p id="day-after">--°F</p>
       </div>      
     </div>
     <!-- <h2 class="company-spotlight">Company Spotlight</h2> -->
