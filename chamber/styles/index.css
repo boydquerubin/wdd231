@@ -62,10 +62,6 @@ nav {
   gap: 20px;
 }
 
-.navigation li {
-  display: inline;
-}
-
 .navigation a {
   color: var(--mint-cream);
   text-decoration: none;
@@ -78,7 +74,7 @@ nav {
   color: var(--lblue);
 }
 
-/* Footer Styles */
+/* footer */
 footer {
   color: var(--mint-cream);
   background: var(--dark-slate-gray);
@@ -86,7 +82,7 @@ footer {
   text-align: center;
 }
 
-/* Member Cards */
+/* member cards */
 #members {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -161,7 +157,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 900px) {
   #members {
     grid-template-columns: repeat(2, 1fr);
@@ -219,29 +214,40 @@ footer {
 }
 
 .current-events {
-  background-color: var(--mint-cream);
+  background-color: var(--cel);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.current-events p {
+  font-size: large;
+  color: var(--dark-green);
+  padding-top: 1rem;
 }
 
 /* weather forecast */
 .weather-forecast {
-  background-color: var(--mint-cream);
+  background-color: var(--cel);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
 }
 
-/* Weather Card */
+.weather-forecast p {
+  font-size: 1rem;
+  color: var(--dark-green);
+}
+
+.weather-forecast #today, #tomorrow, #day-after {
+  font-size: large;
+  font-weight: bold;
+  color: var(--dark-green);
+  padding-top: 1rem;
+}
+
 .weather-card {
-  /* border: 1px solid var(--dark-green); */
-  background-color: var(--mint-cream);
+  background-color: var(--cel);
   border-radius: 10px;
-  /* text-align: center; */
-  /* padding: 2rem 1.5rem;
-  width: 200px;
-  max-width: 300px;
-  margin: 20px auto;
-  overflow: hidden; */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
@@ -252,18 +258,19 @@ footer {
 
 .weather-card h2 {
   color: var(--dark-green);
-  /* font-size: 1.4rem; */
+  padding-top: 1rem;
 }
 
 .weather-card #description {
   text-transform: capitalize;
   color: var(--dark-green);
   font-size: 1rem;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .weather-card #temperature {
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--dark-green);
+  padding-bottom: 1rem;
 }
