@@ -91,8 +91,27 @@ nav {
 footer {
   color: var(--mint-cream);
   background: var(--dark-slate-gray);
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.coc-contact, .socials, .bq-copyright {
+  flex: 1;
   text-align: center;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials img {
+  margin: 0 0.5rem;
+  height: 50px;
+  width: auto;
 }
 
 #members {
@@ -341,10 +360,6 @@ main h2 {
     transform: scale(1.05);
   }
 
-  /* .active::before {
-    content: "📍";
-  } */
-
   header {
     flex-direction: column;
     align-items: center;
@@ -388,5 +403,20 @@ main h2 {
 
   .member-card p {
     font-size: 0.9rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .socials {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .coc-contact {
+    text-align: left;
   }
 }
