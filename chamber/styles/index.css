@@ -166,43 +166,6 @@ footer {
   transform: scale(1.01);
 }
 
-@media screen and (max-width: 900px) {
-  #members {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 37.5em) {
-  .navigation {
-    display: none;
-    background-color: var(--olive);
-    text-align: center;
-    width: 100%;
-  }
-
-  .navigation.show {
-    display: block;
-  }
-
-  .navigation a:hover,
-  .navigation a:active {
-    color: var(--lblue);
-    font-weight: 800;
-    transform: scale(1.05);
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .member-card {
-    min-height: auto;
-    margin: auto;
-  }
-}
-
 #general-info {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;  
@@ -236,7 +199,7 @@ footer {
 .current-events p {
   font-size: large;
   color: var(--dark-green);
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 /* weather forecast */
@@ -260,7 +223,7 @@ footer {
   font-size: large;
   font-weight: bold;
   color: var(--dark-green);
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .weather-card {
@@ -291,4 +254,125 @@ footer {
   font-weight: bold;
   color: var(--dark-green);
   padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  #members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #general-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  #menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--mint-cream);
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #menu::before {
+    content: "≡";
+  }
+
+  #menu.show::before {
+    content: "X";
+  }
+
+  .chamber-title {
+    padding-bottom: 1rem;
+  }
+  
+  .navigation {
+    display: none;
+    list-style: none;
+    background-color: var(--olive);
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .navigation.show {
+    display: block;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    color: var(--mint-cream);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .navigation a:hover,
+  .navigation a:active {
+    color: var(--lblue);
+    font-weight: 800;
+    transform: scale(1.05);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  header img {
+    width: 40px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #members {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .member-card {
+    min-height: auto;
+    margin: auto;
+  }
+
+  .member-card img {
+    width: 150px;
+    height: auto;
+  }
+
+  .chamber-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .member-card p {
+    font-size: 0.9rem;
+  }
+
+  #general-info {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 }
