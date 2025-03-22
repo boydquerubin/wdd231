@@ -190,6 +190,32 @@ footer {
   transform: scale(1.01);
 }
 
+.events-table {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.event-row {
+  display: contents;
+}
+
+.header .event-name,
+.header .event-date,
+.header .event-location {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.event-name,
+.event-date,
+.event-location {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--lblue);
+}
+
+
 #general-info {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;  

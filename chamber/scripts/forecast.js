@@ -25,9 +25,9 @@ async function apiFetch() {
 
 function displayForecast(data) {
   // console.log('hello')
-  today.innerHTML = `Today: ${data.list[0].main.temp}°F`
-  tomorrow.innerHTML = `Tomorrow: ${data.list[1].main.temp}°F`
-  dayAfter.innerHTML = `Day After: ${data.list[2].main.temp}°F`
+  today.innerHTML = `Today: ${data.list[0].main.temp.toFixed(0)}°F`
+  tomorrow.innerHTML = `Tomorrow: ${data.list[1].main.temp.toFixed(0)}°F`
+  dayAfter.innerHTML = `Day After: ${data.list[2].main.temp.toFixed(0)}°F`
 }
 
 apiFetch();
