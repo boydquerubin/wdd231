@@ -297,7 +297,7 @@ main h2 {
   .chamber-title {
     padding-bottom: 1rem;
   }
-  
+
   .navigation {
     display: none;
     list-style: none;
@@ -332,9 +332,9 @@ main h2 {
     transform: scale(1.05);
   }
 
-  /* .active::before {
+  .active::before {
     content: "📍";
-  } */
+  }
 
   header {
     flex-direction: column;
