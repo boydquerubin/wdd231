@@ -75,7 +75,7 @@ nav {
 }
 
 .navigation a.active {
-  color: var(--lblue);
+  color: var(--mint-cream);
   font-weight: bold;
 }
 
