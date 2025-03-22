@@ -13,8 +13,6 @@
   --cream: #eaf8f3;
   --lblue: #88D9E6;
   --cel: #C5FFFD;
-  --green: #39d67a;
-  --red: #f8b9b4;
 }
 
 html, body {
@@ -127,6 +125,7 @@ footer {
 .member-card p {
   font-size: 1rem;
   color: var(--dark-green);
+  margin: 0.5rem;
 }
 
 #hero-img {
@@ -208,6 +207,7 @@ footer {
   gap: 1rem;
   max-width: 1200px;
   justify-content: center;
+  text-align: center;
 }
 
 #current-events-header, #weather-forecast-header, #current-weather-header {

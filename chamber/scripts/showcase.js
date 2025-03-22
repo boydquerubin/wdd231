@@ -40,7 +40,7 @@ const displayMembers = (companies) => {
     website.target = "_blank";
 
     const levelLabel = company.membership_level === 1 ? "Gold Member" : "Silver Member";
-    membershipLevel.textContent = `Membership: ${levelLabel}`;
+    // membershipLevel.textContent = `Membership: ${levelLabel}`;
 
     image.setAttribute("src", company.imageurl);
     image.setAttribute("alt", `Logo of ${company.name}`);
