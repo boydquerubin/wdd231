@@ -87,7 +87,6 @@ nav {
   font-weight: bold;
 }
 
-/* footer */
 footer {
   color: var(--mint-cream);
   background: var(--dark-slate-gray);
@@ -114,7 +113,6 @@ footer {
   width: auto;
 }
 
-/* member cards */
 #members {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -170,7 +168,6 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* cta Button */
 .cta-join-button {
   text-align: center;
   margin: 2rem auto;
@@ -230,7 +227,6 @@ footer {
   padding: 1rem 0;
 }
 
-/* weather forecast */
 .weather-forecast {
   background-color: var(--cel);
   border-radius: 10px;
@@ -274,7 +270,6 @@ footer {
   text-transform: capitalize;
   color: var(--dark-green);
   font-size: 1rem;
-  /* font-weight: 600; */
 }
 
 .weather-card #temperature {
