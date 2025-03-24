@@ -17,6 +17,7 @@
 html, body {
   font-family: "Sunflower", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -124,14 +125,15 @@ footer {
 }
 
 .member-card {
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   min-height: 300px;
   background-color: var(--mint-cream);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .member-card:hover {
