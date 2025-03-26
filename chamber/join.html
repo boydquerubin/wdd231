@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber Join Page">
+  <meta name="author" content="Boyd Querubin">
+  <title>Meridian Chamber of Commerce Join Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="Chamber Directory Page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://boydquerubin.github.io/wdd231/images/chamber_logo.webp">
+  <meta property="og:url" content="https://boydquerubin.github.io/wdd231/chamber/directory">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/showcase.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/forecast.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/chamber_logo.webp" alt="Idaho Chamber Logo">
+      <span class="chamber-title">
+        Meridian <br>
+        Chamber of Commerce
+      </span>
+    </div>
+    <a id="menu" href="#"></a>
+    <nav aria-label="Main Navigation">
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="directory.html" title="Directory">Directory</a></li>
+        <li><a href="join.html" title="Join">Join</a></li>
+        <li><a href="#" target="_blank" title="Discover">Discover</a></li>
+      </ul>
+    </nav> 
+  </header>
+
+  <main>
+    <h1>Join</h1>
+    <img id="hero-img" src="images/meridian.webp" alt="Meridian, Idaho Neighborhood">
+    <div class="cta-join-button">
+      <button>Join Chamber of Commerce</button>
+    </div>
+    <div id="general-info">
+
+
+        
+      <section class="current-events">
+        <h2 id="current-events-header">Events</h2>
+        <div class="events-table">
+          <div class="event-row header">
+            <div class="event-name">Event</div>
+            <div class="event-date">Date/Time</div>
+            <div class="event-location">Location</div>
+          </div>
+          <div class="event-row">
+            <div class="event-name">Meridian Main Street Market</div>
+            <div class="event-date">Saturdays, Apr–Oct, 9:00 AM – 2:00 PM</div>
+            <div class="event-location">Meridian City Hall Plaza</div>
+          </div>
+          <div class="event-row">
+            <div class="event-name">Sparklight Movie Night</div>
+            <div class="event-date">Fridays, Jun–Aug, around sunset</div>
+            <div class="event-location">Settlers Park</div>
+          </div>
+          <div class="event-row">
+            <div class="event-name">Concerts on Broadway</div>
+            <div class="event-date">Annually in September, evenings</div>
+            <div class="event-location">Broadway Avenue, Downtown</div>
+          </div>
+          <div class="event-row">
+            <div class="event-name">Christmas in Meridian</div>
+            <div class="event-date">Late Nov–Dec, varies</div>
+            <div class="event-location">Downtown Meridian</div>
+          </div>
+        </div>
+      </section>      
+      <div class="weather-card" aria-live="polite">
+        <h2 id="current-weather-header">Current Weather</h2>
+        <h2 id="town">Weather in Meridian</h2>
+        <img id="graphic" src="images/default-weather.png" alt="Loading weather graphic">
+        <p id="description">Loading weather...</p>
+        <p id="temperature">--°F</p>
+      </div>
+      <div class="weather-forecast">
+        <h2 id="weather-forecast-header">Weather Forecast</h2>
+        <p id="today">--°F</p>
+        <p id="tomorrow">--°F</p>
+        <p id="day-after">--°F</p>
+      </div>      
+    </div>
+    <div id="members">
+    </div>
+  </main>
+  
+  <footer>
+    <div class="coc-contact">
+      <p class="mcoc-bold">Meridian Chamber of Commerce</p>
+      <p>33 E. Broadway Ave. Meridian, Idaho 83642</p>
+      <p>(208) 888-4433</p>
+    </div>
+    <div class="socials">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/instagram.png" alt="Idaho Chamber Instagram Logo Link">
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="images/youtube.png" alt="Idaho Chamber YouTube Logo Link">
+      </a>
+      <a href="https://www.tiktok.com" target="_blank">
+        <img src="images/tiktok.png" alt="Idaho Chamber TikTok Logo Link">
+      </a>
+    </div>
+    <div class="bq-copyright">
+      <p>&copy; <span id="currentyear"></span> Boyd Querubin, WDD 231</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>  
+</body>
+</html>
