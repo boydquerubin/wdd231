@@ -54,7 +54,6 @@ header span {
   text-align: left;
 }
 
-
 .location {
   display: flex;
   flex-direction: column;
@@ -102,6 +101,15 @@ header span {
 .certificate nav ul li a:hover {
   background-color: var(--dark-slate-gray);
   transform: scale(1.05);
+}
+
+.animation {
+  opacity: 1;
+  transition: opacity 230ms;
+}
+
+.animation:hover {
+  opacity: 0.8;
 }
 
 footer {
