@@ -1,2 +1,26 @@
 *{box-sizing: border-box;}
 
+#openButton1, #openButton2, #openButton3 {
+    background-color: grey;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+#dialogBox {
+    background-color: rgb(205, 243, 245);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#closeButton {
+    background-color: rgb(223, 215, 215);
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+::backdrop {
+    background-color: rgba(1, 37, 68, 0.5);
+}
