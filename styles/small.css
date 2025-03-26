@@ -113,3 +113,56 @@ main h2 {
 .course-button:hover {
   transform: scale(1.01);
 }
+
+dialog#courseModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#courseModal h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+#courseModal p {
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+#modalClose {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--feldgrau);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+#modalClose:hover {
+  background-color: var(--olive);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

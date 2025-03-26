@@ -121,3 +121,44 @@ wddLink.addEventListener("click", (event) => {
   const wddCourses = courses.filter(course => course.subject === "WDD");
   createCoursesButton(wddCourses);
 });
+
+const courseModal = document.querySelector("#courseModal");
+const modalClose = document.querySelector("#modalClose");
+const courseTitle = document.querySelector("#courseTitle");
+const courseDesc = document.querySelector("#courseDesc");
+const courseCert = document.querySelector("#courseCert");
+const courseTech = document.querySelector("#courseTech");
+const courseCredits = document.querySelector("#courseCredits");
+
+modalClose.addEventListener("click", () => courseModal.close());
+
+function createCoursesButton(filteredCourses) {
+  let container = document.querySelector(".courses-buttons");
+  let totalCreditsElement = document.querySelector("#message");
+
+  container.innerHTML = "";
+
+  filteredCourses.forEach(course => {
+    let button = document.createElement("button");
+
+    button.innerHTML = `${course.subject} ${course.number} - ${course.title} ${course.completed ? '✅' : ''}`;
+
+    button.classList.add(course.completed ? "completed-course" : "incomplete-course");
+    button.classList.add("course-button");
+
+    button.addEventListener("click", () => {
+      courseTitle.textContent = `${course.subject} ${course.number} - ${course.title}`;
+      courseDesc.textContent = course.description;
+      courseCert.textContent = course.certificate;
+      courseTech.textContent = course.technology.join(", ");
+      courseCredits.textContent = course.credits;
+
+      courseModal.showModal();
+    });
+
+    container.appendChild(button);
+  });
+
+  let totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+  totalCreditsElement.textContent = totalCredits;
+}
