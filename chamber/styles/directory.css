@@ -21,6 +21,11 @@ html, body {
   background-color: var(--cream);
 }
 
+h1 {
+  color: var(--olive);
+  padding: 1rem;
+}
+
 header {
   background-color: var(--dark-slate-gray);
   display: flex;
@@ -290,7 +295,6 @@ main h2 {
     main {
       display: grid;
       grid-template-columns: 1fr;
-      margin: 1rem;
       border-radius: 10px;
   }    
 }
