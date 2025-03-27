@@ -43,7 +43,88 @@
   </header>
 
   <main>
-    <h1>Join</h1>    
+    <h1>Join</h1>
+    <form action="" method="get" class="join-form">
+      <div class="join-form">
+        <label for="first-name">Enter your first name:</label>
+        <input type="text" name="firstName" id="first-name" required autocomplete="given-name" title="Enter your first name" />
+      </div>
+      <div class="join-form">
+        <label for="last-name">Enter your last name:</label>
+        <input type="text" name="lastName" id="last-name" required autocomplete="family-name" title="Enter your last name" />
+      </div>
+      <div class="join-form">
+        <label for="organizational-title">Enter organizational title:</label>
+        <input 
+          type="text" 
+          name="organizationalTitle" 
+          id="organizational-title" 
+          required 
+          autocomplete="organization-title" 
+          pattern="[A-Za-z\s\-]{7,}" 
+          title="Only letters, spaces, and hyphens. Minimum 7 characters." 
+        />
+      </div>
+      <div class="join-form">
+        <label for="email">Enter your email:</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          required 
+          autocomplete="email" 
+          placeholder="example@email.com" 
+          title="Enter a valid email address"
+        />
+      </div>
+      <div class="join-form">
+        <label for="phone">Enter your phone:</label>
+        <input 
+          type="tel" 
+          name="phone" 
+          id="phone" 
+          required 
+          autocomplete="tel" 
+          placeholder="123-456-7890" 
+          title="Enter your phone number"
+        />
+      </div>
+      <div class="join-form">
+        <label for="business-name">Enter business name:</label>
+        <input 
+          type="text" 
+          name="businessName" 
+          id="business-name" 
+          required 
+          autocomplete="organization" 
+          title="Enter the name of your business or organization"
+        />
+      </div>
+      <div class="join-form">
+        <label for="membership">Select membership level:</label>
+        <select name="membership" id="membership" required title="Choose your membership level">
+          <option value="">--Please choose--</option>
+          <option value="np">NP Membership (free for non-profits)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </div>
+      <div class="join-form">
+        <label for="description">Business description:</label>
+        <textarea 
+          name="description" 
+          id="description" 
+          title="Describe your business or organization" 
+          rows="4" 
+          required
+        ></textarea>
+      </div>
+      <input type="hidden" name="timestamp" id="timestamp" />
+      <div class="join-form">
+        <input type="submit" value="Subscribe!" />
+      </div>
+    </form>   
   </main>
   
   <footer>

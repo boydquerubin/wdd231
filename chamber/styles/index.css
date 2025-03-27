@@ -338,10 +338,6 @@ footer {
     content: "X";
   }
 
-  .chamber-title {
-    padding-bottom: 1rem;
-  }
-  
   .navigation {
     display: none;
     list-style: none;
@@ -415,6 +411,7 @@ footer {
   .chamber-title {
     font-size: 1.2rem;
     text-align: center;
+    padding-bottom: 1rem;
   }
 
   .member-card p {
