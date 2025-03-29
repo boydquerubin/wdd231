@@ -130,7 +130,7 @@ footer {
   min-height: 300px;
   background-color: var(--mint-cream);
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
@@ -151,7 +151,7 @@ footer {
 .member-card img {
   margin: 1rem 0;
   border-radius: 5px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .member-card p {
@@ -166,7 +166,7 @@ footer {
   object-fit: cover;
   display: block;
   border-bottom: 4px solid var(--dark-slate-gray);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .cta-join-button {
@@ -184,7 +184,7 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .cta-join-button button:hover {
@@ -240,7 +240,7 @@ footer {
 .current-events {
   background-color: var(--cel);
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .current-events:hover {
@@ -257,7 +257,7 @@ footer {
 .weather-forecast {
   background-color: var(--cel);
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .weather-forecast:hover {
@@ -280,7 +280,7 @@ footer {
 .weather-card {
   background-color: var(--cel);
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .weather-card:hover {

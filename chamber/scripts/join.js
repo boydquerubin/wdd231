@@ -5,8 +5,10 @@ document.querySelectorAll("[data-modal]").forEach(button => {
     });
   });
   
-  document.querySelectorAll(".close-modal").forEach(button => {
-    button.addEventListener("click", () => {
-      button.closest("dialog").close();
-    });
+document.querySelectorAll(".close-modal").forEach(button => {
+  button.addEventListener("click", () => {
+    button.closest("dialog").close();
   });
+});
+
+document.getElementById("timestamp").value = new Date().toISOString();
