@@ -72,8 +72,8 @@ h1 {
 }
 
 .primary {
-  background-color: var(--filler-dark-color);
-  color: var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--filler-dark-color);
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
