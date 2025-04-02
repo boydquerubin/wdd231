@@ -5,18 +5,20 @@
 }
 
 :root {
-  --primary-color: #0FA3B1;
+  --primary-color: #045D6C;
   --secondary-color: #B5E2FA;
   --accent-color: #F9F7F3;
   --complementary-color: #EDDEA4;
   --cta-color: #F7A072;
-  --filler-color: #dbdbdb;
+  --filler-light-color: #dbdbdb;
   --filler-dark-color: #001327;
+  --white: #fff;
+  --black: #000;
 }
 
 html, body {
   font-family: 'Jost', Arial, Helvetica, sans-serif;
-  background-color: var(--filler-color);
+  background-color: var(--filler-light-color);
   color: var(--filler-dark-color);
   line-height: 1.6;
   padding: 0;
@@ -48,7 +50,7 @@ nav {
 }
 
 .navigation a {
-  color: var(--accent-color);
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem;
@@ -73,7 +75,7 @@ h1 {
 
 .primary {
   background-color: var(--primary-color);
-  color: var(--filler-dark-color);
+  color: var(--white);
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
@@ -152,7 +154,7 @@ h1 {
 
 footer {
   background-color: var(--primary-color);
-  color: var(--accent-color);
+  color: var(--white);
   padding: 1rem;
   text-align: center;
 }
