@@ -14,6 +14,8 @@ const displayAttractions = (attractions) => {
     const image = document.createElement("img");
     image.src = `images/${attraction.image}`;
     image.alt = `Image of ${attraction.name}`;
+    image.width = "300";
+    image.height = "200";
     image.loading = "lazy";
     figure.appendChild(image);
     sightCard.appendChild(figure);
