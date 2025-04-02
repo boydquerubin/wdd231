@@ -101,6 +101,7 @@ footer {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    min-height: 100px;
 }
 
 footer a {
