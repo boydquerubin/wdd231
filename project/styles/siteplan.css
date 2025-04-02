@@ -77,8 +77,8 @@ h1 {
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 250px;
-  max-width: auto;
+  width: auto;
+  max-width: 250px;
 }
 
 .secondary{
@@ -87,8 +87,8 @@ h1 {
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 250px;
-  max-width: auto;
+  width: auto;
+  max-width: 250px;
 }
 
 .accent {
@@ -97,8 +97,8 @@ h1 {
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 250px;
-  max-width: auto;
+  width: auto;
+  max-width: 250px;
 }
 
 .complementary {
@@ -107,8 +107,8 @@ h1 {
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 250px;
-  max-width: auto;
+  width: auto;
+  max-width: 250px;
 }
 
 .button-color {
