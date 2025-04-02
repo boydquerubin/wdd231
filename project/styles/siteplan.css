@@ -117,8 +117,8 @@ h1 {
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 250px;
-  max-width: auto;
+  width: auto;
+  max-width: 250px;
 }
 
 .site-name, .site-purpose, .scenarios, .color-schema, .typography, .wireframe {
