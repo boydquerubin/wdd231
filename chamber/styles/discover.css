@@ -18,7 +18,7 @@ html, body {
   font-family: "Sunflower", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -128,50 +128,125 @@ footer {
   width: auto;
 }
 
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+#attraction-cards {
+  box-sizing: border-box;
+  margin: 2rem;
 }
 
-dialog button.close-modal {
-  margin-top: 1rem;
+.sight-card {
+  margin: 1rem 8px;
+  padding: 1rem;
+  background-color: var(--mint-cream);
+  border: 1px solid var(--feldgrau);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: 
+  "photograph"
+  "name"
+  "location"
+  "description"
+  "button";  
+}
+
+.sight-card h2 {
+  font-size: 1.25rem;
+  color: var(--dark-slate-gray);
+  margin: 0.25rem 0;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  grid-area: name;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sight-card figure {
+  margin: 0;
+}
+
+.sight-card img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  height: auto;
+  border-radius: 5px;
+  grid-area: photograph;
+  display: block;
+  margin: 0 auto;
+}
+
+.sight-card address {
+  color: var(--olive);
+  margin: 1rem 0;
+  grid-area: location;
+}
+
+.sight-card p {
+  font-size: 1rem;
+  color: var(--dark-slate-gray);
+  margin: 0.5rem 0;
+  grid-area: description;
+  padding: 0 2rem;
+  text-align: start;
+  align-items: start;
+}
+
+.sight-card button {
   background-color: var(--olive);
   color: var(--mint-cream);
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
   border: none;
-  padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  grid-area: button;
 }
 
-dialog button.close-modal:hover {
+.sight-card button:hover {
   background-color: var(--feldgrau);
 }
 
-#results {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background-color: #fff;
-  border-left: 8px solid var(--olive);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  font-family: "Sunflower", Arial, Helvetica, sans-serif;
-  color: var(--dark-slate-gray);
-  line-height: 1.6;
+
+/* LARGE */
+@media only screen and (min-width: 64rem) {
+    #attraction-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sight-card img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .sight-card img:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }  
 }
 
-#results p {
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
-}
+/* MEDIUM */
+@media only screen and (min-width: 38rem) {
+    .sight-card {
+        grid-template-areas:
+        "name name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+    }
 
-#results p:first-child {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: var(--olive);
-}
-
-#results p:last-child {
-  margin-bottom: 0;
+    .sight-card img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .sight-card img:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media screen and (max-width: 37.5em) {
@@ -201,6 +276,7 @@ dialog button.close-modal:hover {
     text-align: center;
     padding-bottom: 1rem;
   }
+
   .navigation {
     display: none;
     list-style: none;
@@ -271,4 +347,3 @@ dialog button.close-modal:hover {
     text-align: left;
   }
 }
-

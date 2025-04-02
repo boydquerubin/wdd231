@@ -19,6 +19,10 @@
 html, body {
   font-family: "Sunflower", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {

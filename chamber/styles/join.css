@@ -18,7 +18,7 @@ html, body {
   font-family: "Sunflower", Arial, Helvetica, sans-serif;
   background-color: var(--cream);
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -321,6 +321,7 @@ dialog button.close-modal:hover {
     text-align: center;
     padding-bottom: 1rem;
   }
+  
   .navigation {
     display: none;
     list-style: none;
