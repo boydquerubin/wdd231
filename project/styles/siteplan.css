@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0FA3B1;
+  --secondary-color: #B5E2FA;
+  --accent-color: #F9F7F3;
+  --complementary-color: #EDDEA4;
+  --cta-color: #F7A072;
+  --filler-color: #dbdbdb;
+  --filler-dark-color: #001327;
+}
+
+html, body {
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+  background-color: var(--filler-color);
+  color: var(--filler-dark-color);
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+}
+
+#menu {
+  display: none;
+}
+
+nav {
+  text-align: right;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: var(--cta-color);
+}
+
+main {
+  padding: 2rem 10%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Trocchi', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 250px;
+  max-width: auto;
+}
+
+.secondary{
+  background-color: var(--secondary-color);
+  color: var(--filler-dark-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 250px;
+  max-width: auto;
+}
+
+.accent {
+  background-color: var(--accent-color);
+  color: var(--filler-dark-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 250px;
+  max-width: auto;
+}
+
+.complementary {
+  background-color: var(--complementary-color);
+  color: var(--filler-dark-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 250px;
+  max-width: auto;
+}
+
+.button-color {
+  background-color: var(--cta-color);
+  color: var(--filler-dark-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 250px;
+  max-width: auto;
+}
+
+.site-name, .site-purpose, .scenarios, .color-schema, .typography, .wireframe {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.site-name h2, .site-purpose h2, .scenarios h2, .color-schema h2, .typography h2, .wireframe h2 {
+  font-family: 'Trocchi', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--filler-dark-color);
+}
+
+.site-name p, .site-purpose p, .scenarios p, .color-schema p, .typography p {
+  font-size: 1rem;
+}
+
+.color-schema p {
+  font-size: 0.9rem;
+}
+
+.font-one, .font-two {
+  font-size: 1.1rem;
+}
+
+.wireframe img {
+  max-width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1.5rem 5%;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wireframe img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .navigation {
+    gap: 1rem;
+  }
+
+  .site-name h2, .site-purpose h2, .scenarios h2, .color-schema h2, .typography h2 {
+    font-size: 1.25rem;
+  }
+
+  .font-one, .font-two {
+    font-size: 1rem;
+  }
+}
