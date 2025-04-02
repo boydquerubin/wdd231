@@ -346,4 +346,8 @@ footer {
   .coc-contact {
     text-align: left;
   }
+
+  .sight-card p {
+    padding: 0.5rem;
+  }
 }
