@@ -382,6 +382,11 @@ dialog button.close-modal:hover {
     align-items: flex-start;
     text-align: left;
   }
+
+  footer a {
+    text-decoration: none;
+  }
+  
   
   .socials {
     text-align: left;

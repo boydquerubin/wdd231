@@ -101,6 +101,11 @@ footer {
   flex-wrap: wrap;
 }
 
+footer a {
+  text-decoration: none;
+}
+
+
 .coc-contact, .socials, .bq-copyright {
   flex: 1;
   text-align: center;
