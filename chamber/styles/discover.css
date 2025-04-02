@@ -211,6 +211,93 @@ footer {
   background-color: var(--feldgrau);
 }
 
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  z-index: 1000;
+  align-items: center;
+  text-align: center;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h2 {
+  margin-bottom: 1rem;
+  color: var(--olive);
+  font-size: 1.5rem;
+}
+
+dialog p {
+  font-size: 1rem;
+  color: var(--dark-slate-gray);
+  line-height: 1.6;
+}
+
+dialog button.close-modal {
+  margin-top: 1.5rem;
+  background-color: var(--olive);
+  color: var(--mint-cream);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+dialog button.close-modal:hover {
+  background-color: var(--feldgrau);
+}
+
+dialog a {
+  color: var(--olive);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+dialog a:hover {
+  color: var(--feldgrau);
+}
+
+
+.visit-message {
+  background-color: var(--lblue);
+  color: var(--dark-green);
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: auto;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+#timestamp {
+  margin: 1rem auto;
+  padding: 1rem;
+  display: block;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
 
 /* LARGE */
 @media only screen and (min-width: 64rem) {
