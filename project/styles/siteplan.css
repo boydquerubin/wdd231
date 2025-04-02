@@ -68,11 +68,11 @@ h1 {
   font-family: 'Trocchi', serif;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--primary-color);
+  color: var(--filler-dark-color);
 }
 
 .primary {
-  background-color: var(--primary-color);
+  background-color: var(--filler-dark-color);
   color: var(--accent-color);
   margin: 1rem;
   padding: 1rem;
