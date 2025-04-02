@@ -214,13 +214,16 @@ footer a {
         align-items: flex-start;
         text-align: left;
         min-height: 125px;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .socials {
         text-align: left;
         margin-top: 1rem;
     }
-
+    
     .coc-contact {
         text-align: left;
     }
