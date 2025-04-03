@@ -18,6 +18,7 @@ h1 {
 #attraction-cards {
   box-sizing: border-box;
   margin: 2rem;
+  min-height: 1600px;
 }
 
 .sight-card {
@@ -55,10 +56,10 @@ h1 {
 }
 
 .sight-card img {
-  width: 100%;
-  max-width: 300px;
-  max-height: 200px;
-  height: auto;
+  width: 300px;
+  max-width: auto;
+  height: 200px;
+  max-height: auto;
   border-radius: 5px;
   grid-area: photograph;
   display: block;
@@ -159,7 +160,6 @@ dialog a:hover {
   color: var(--feldgrau);
 }
 
-
 .visit-message {
   background-color: var(--lblue);
   color: var(--dark-green);
@@ -184,6 +184,20 @@ dialog a:hover {
   width: 100%;
   max-width: 300px;
   text-align: center;
+}
+
+.placeholder {
+  height: 250px;
+  background: #eee;
+  border-radius: 8px;
+  margin: 1rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
 }
 
 /* LARGE */
