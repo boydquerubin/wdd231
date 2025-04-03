@@ -186,20 +186,6 @@ dialog a:hover {
   text-align: center;
 }
 
-/* .placeholder {
-  height: 250px;
-  background: #eee;
-  border-radius: 8px;
-  margin: 1rem;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% { opacity: 0.7; }
-  50% { opacity: 1; }
-  100% { opacity: 0.7; }
-} */
-
 /* LARGE */
 @media only screen and (min-width: 64rem) {
     #attraction-cards {
