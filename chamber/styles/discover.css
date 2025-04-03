@@ -57,9 +57,7 @@ h1 {
 
 .sight-card img {
   width: 300px;
-  max-width: auto;
   height: 200px;
-  max-height: auto;
   border-radius: 5px;
   grid-area: photograph;
   display: block;
