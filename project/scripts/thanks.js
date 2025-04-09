@@ -8,7 +8,7 @@ const formattedDate = new Date(rawTimestamp).toLocaleString('en-US', {
 });
 
 document.querySelector('#results').innerHTML = `
-  <p>Thank you for reaching out!</p>
+  <p>We appreciate you reaching out!</p>
   <p>We will review the message and get back to you within 3 business days.</p>
   <p>Here are the details you provided, submitted on: ${formattedDate}</p>
   <p>Message from ${myInfo.get('firstName')} ${myInfo.get('lastName')}</p>

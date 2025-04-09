@@ -19,6 +19,7 @@
   <meta property="og:image" content="https://boydquerubin.github.io/wdd231/images/idaho.webp">
   <meta property="og:url" content="https://boydquerubin.github.io/wdd231/">
 
+  <script src="scripts/home.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
 </head>
@@ -38,6 +39,27 @@
   </header>
   <main>
     <h1>Home</h1>
+    <div class="top-section">
+      <img src="images/monitor.webp" alt="image of a monitor">
+      <div class="top-section-text">
+        <h2>UNBEATABLE DEALS</h2>
+        <p>Check out our selection</p>
+        <a href="shop.html">
+          <button id="shop-btn">Shop Now</button>
+        </a>
+        <div id="exchange-section">
+          <h3>USD vs Top 5 Most Used Currencies</h3>
+          <ul id="global-currencies">
+            <li>Loading...</li>
+          </ul>
+        </div>       
+        
+      </div>
+    </div>
+    <div class="featured">
+      <h2>FEATURED PRODUCTS</h2>
+      <div id="products"></div>
+    </div>
     
   </main>
   <footer>

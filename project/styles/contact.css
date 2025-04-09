@@ -54,8 +54,48 @@
     background-color: var(--cta-color);
 }
 
+#results {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    color: var(--filler-dark-color);
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#results p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#results p {
+    margin-bottom: 0.75rem;
+}
+  
+
 @media screen and (max-width: 600px) {
     .contact-form {
         padding: 1rem;
     }
+}
+
+@keyframes fadeSlideFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.contact-form {
+    animation: fadeSlideFromTop 0.8s ease-out both;
 }

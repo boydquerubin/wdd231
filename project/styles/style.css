@@ -1,0 +1,150 @@
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.top-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.top-section-text {
+    text-align: center;
+    max-width: 500px;
+}
+
+.top-section-text h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.top-section-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.top-section-text button {
+    background-color: var(--cta-color);
+    color: var(--black);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.top-section-text button:hover {
+    background-color: var(--secondary-color);
+}
+
+#products {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.featured-product {
+    text-align: center;
+}
+
+.featured-product img {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.featured h2 {    
+    font-family: var(--trocchi);
+    margin-top: 2rem;
+}
+
+#exchange-rate {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--filler-dark-color);
+}
+
+#exchange-section h3 {
+    margin-top: 1.5rem;
+    color: var(--primary-color);
+}
+
+#global-currencies {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+#global-currencies li {
+    padding: 0.25rem 0;
+}
+
+#shop-btn {
+    font-weight: bold;
+    color: var(--filler-dark-color);
+}
+
+@media screen and (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .top-section img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+
+    .top-section-text {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .top-section-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .top-section-text p {
+        font-size: 1rem;
+    }
+
+    .top-section-text button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    #products {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .featured h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    #exchange-rate {
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+    }
+
+    #global-currencies li {
+        font-size: 0.95rem;
+    }
+}
