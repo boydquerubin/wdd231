@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BRIQ-N-BRAQ Online Store Contact Page">
+  <meta name="author" content="Boyd Querubin">
+  <title>BRIQ-N-BRAQ Online Store Contact Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Trocchi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="BRIQ-N-BRAQ Online Store Contact Page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://boydquerubin.github.io/wdd231/images/idaho.webp">
+  <meta property="og:url" content="https://boydquerubin.github.io/wdd231/">
+
+  <script src="scripts/contact.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+  <header>    
+    <a id="menu" href="#"></a>
+    <a href="index.html">
+        <img src="images/briq-n-braq-logo.webp" alt="BRIQ-N-BRAQ Logo" class="logo">
+    </a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="shop.html" title="Shop">Shop</a></li>
+        <li><a href="contact.html" title="Chamber">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+    <form method="get" action="thanks.html" class="contact-form">
+        <div class="form-group">
+          <label for="first-name">Enter your first name:</label>
+          <input type="text" name="firstName" id="first-name" required autocomplete="given-name" />
+        </div>
+      
+        <div class="form-group">
+          <label for="last-name">Enter your last name:</label>
+          <input type="text" name="lastName" id="last-name" required autocomplete="family-name" />
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Enter your email:</label>
+          <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@email.com" />
+        </div>
+      
+        <div class="form-group">
+          <label for="phone">Enter your phone:</label>
+          <input type="tel" name="phone" id="phone" required autocomplete="tel" placeholder="123-456-7890" />
+        </div>
+      
+        <div class="form-group">
+          <label for="description">Your Message:</label>
+          <textarea name="description" id="description" rows="4" required></textarea>
+        </div>
+      
+        <input type="hidden" name="timestamp" id="timestamp" />
+      
+        <div class="form-group">
+          <input type="submit" value="Send Message" />
+        </div>
+      </form>      
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Boyd Querubin, Meridian, ID</p>
+    <p id="lastModified"></p>
+  </footer>  
+</body>
+</html>

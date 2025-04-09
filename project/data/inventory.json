@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "name": "Trendy Casual Sports Shoes",
+      "name": "Trendy Shoes",
       "description": "Breathable and stylish running shoes for everyday wear.",
       "price": 59.99,
       "category": "Apparel",
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "name": "Autonomous Robot Vacuum Cleaner",
+      "name": "Robot Vacuum",
       "description": "Smart robotic vacuum with scheduling, self-charging, and sensors.",
       "price": 179.00,
       "category": "Electronics",
@@ -82,7 +82,7 @@
     },
     {
       "id": 10,
-      "name": "Insulated Thermal Lunchbox",
+      "name": "Thermal Lunchbox",
       "description": "Leak-proof and insulated lunchbox with 3 compartments and utensils.",
       "price": 27.95,
       "category": "Kitchen",
