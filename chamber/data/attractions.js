@@ -1,4 +1,4 @@
-[
+export default [
   {
     "name": "The Village",
     "address": "3600 E Fairview Ave, Meridian, ID 83642",
