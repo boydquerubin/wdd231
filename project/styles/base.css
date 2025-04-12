@@ -73,7 +73,7 @@ nav {
 }
 
 .navigation a.active {
-    color: var(--secondary-color);
+    color: var(--white);
 }
 
 .navigation a.active::before {
