@@ -183,7 +183,7 @@ export default [
   },
   {
     "id": 15,
-    "name": "Headphones (Noise Cancelling)",
+    "name": "Headphones",
     "description": "Wireless over-ear headphones with noise cancellation and long battery life.",
     "price": 15.00,
     "category": "Electronics",
