@@ -51,7 +51,7 @@ const displayProducts = (items) => {
     <div class="row"><span class="label">Material:</span><span>${item.material || '—'}</span></div>
     <div class="row"><span class="label">Tips:</span><span>${item.tips || '—'}</span></div>
     <div class="row"><span class="label">Warranty:</span><span>${item.warranty || '—'}</span></div>
-  </div>
+    </div>
     <button class="close-modal">Close</button>
   `;
 
