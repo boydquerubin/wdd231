@@ -100,9 +100,21 @@
 }
 
 #shop-btn {
+    display: inline-block;
+    background-color: var(--cta-color);
+    color: var(--black);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: var(--filler-dark-color);
-}
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #shop-btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
 
 .visit-message {
     color: var(--primary-color);
