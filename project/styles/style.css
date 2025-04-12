@@ -62,11 +62,20 @@
 .featured-product img {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
+
+.featured-product img:hover {
+    transform: scale(1.05);
+  }
 
 .featured h2 {    
     font-family: var(--trocchi);
     margin-top: 2rem;
+}
+
+.featured h3 {    
+    color: var(--primary-color);
 }
 
 #exchange-rate {
@@ -94,6 +103,28 @@
     font-weight: bold;
     color: var(--filler-dark-color);
 }
+
+.visit-message {
+    color: var(--primary-color);
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+/* #timestamp {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--filler-dark-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--white);
+    color: var(--filler-dark-color);
+    width: 100%;
+    max-width: 320px;  
+    overflow: visible;
+    box-sizing: border-box;
+    text-align: center;
+  }   */
 
 @media screen and (max-width: 768px) {
     .top-section {

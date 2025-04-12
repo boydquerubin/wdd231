@@ -1,10 +1,9 @@
 const productsContainer = document.querySelector('#products');
-const url = 'data/inventory.json';
 
 async function getFeaturedProducts() {
   try {
-    const response = await fetch(url);
-    const data = await response.json();
+    const module = await import('../data/inventory.js');
+    const data = module.default;
 
     const randomProducts = shuffleArray(data).slice(0, 3);
 
@@ -26,7 +25,8 @@ async function getFeaturedProducts() {
       productsContainer.appendChild(card);
     });
   } catch (error) {
-    console.error('Error fetching featured products:', error);
+    console.error('Error loading featured products:', error);
+    productsContainer.innerHTML = `<p>Unable to load featured products at this time.</p>`;
   }
 }
 
@@ -35,6 +35,7 @@ function shuffleArray(array) {
 }
 
 getFeaturedProducts();
+
 
 const globalCurrencyList = document.getElementById('global-currencies');
 
@@ -53,7 +54,6 @@ async function fetchGlobalCurrencies() {
 
       mostUsed.forEach(currency => {
         const rate = data.conversion_rates[currency];
-        // console.log(currency)
         const li = document.createElement('li');
         li.textContent = `1 USD = ${rate.toFixed(2)} ${currency}`;
         globalCurrencyList.appendChild(li);
@@ -69,3 +69,28 @@ async function fetchGlobalCurrencies() {
 
 document.addEventListener('DOMContentLoaded', fetchGlobalCurrencies);
 
+const timestampInput = document.getElementById("timestamp");
+if (timestampInput) {
+  const now = new Date();
+  timestampInput.value = now.toLocaleString();
+}
+
+const sidebarMessage = document.createElement("div");
+sidebarMessage.classList.add("visit-message");
+
+const lastVisit = localStorage.getItem("lastVisit");
+const now = Date.now();
+
+if (!lastVisit) {
+  sidebarMessage.textContent = "Welcome to BRIQ-N-BRAQ — where everyday finds become extraordinary!";
+} else {
+  const difference = now - lastVisit;
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  sidebarMessage.textContent = days < 1
+    ? "Welcome back, we’re glad to see you again!"
+    : `You last visited ${days} day${days === 1 ? "" : "s"} ago.`;
+}
+
+localStorage.setItem("lastVisit", now);
+const h1 = document.querySelector("main h1");
+h1.insertAdjacentElement("afterend", sidebarMessage);
